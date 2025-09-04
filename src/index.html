@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ATOMIC JAM — Взрыв вкуса в каждой ложке!</title>
+    <meta name="description" content="ATOMIC JAM — варенье ручной работы. Натуральные ягоды, семейные традиции, тёплый вкус. Заказывайте с доставкой по РФ." />
+    <link rel="preload" as="image" href="../ATOMIC_JAM_Website_Images/jam_jars_assortment.jpg">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img class="logo" src="../ATOMIC_JAM_Website_Images/atomic_logo_concept.jpg" alt="ATOMIC JAM логотип" />
+          <div class="brand-text">
+            <strong>ATOMIC JAM</strong>
+            <span>Взрыв вкуса в каждой ложке!</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#catalog">Каталог</a>
+          <a href="#about">О нас</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#events">События</a>
+          <a href="#order" class="btn btn-primary">Заказать</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-bg" role="img" aria-label="Ассорти банок с вареньем"></div>
+        <div class="container hero-inner">
+          <h1>Ручное варенье с характером</h1>
+          <p>Натуральные ягоды, авторские рецепты, семейные традиции. Попробуйте вкус, который влюбляет с первой ложки.</p>
+          <div class="hero-cta">
+            <a href="#catalog" class="btn btn-primary glow">Выбрать вкус</a>
+            <a href="#order" class="btn btn-ghost">Сделать заказ</a>
+          </div>
+          <div class="anime-badges" aria-hidden="true">
+            <span class="sparkle">✦</span>
+            <span class="sparkle">✧</span>
+            <span class="sparkle">✦</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Offer / Benefits -->
+      <section class="offer reveal">
+        <div class="container offer-grid">
+          <div class="card">
+            <h3>Почему ATOMIC JAM</h3>
+            <ul class="benefits">
+              <li><strong>Натурально:</strong> ягоды, сахар и время — без компромиссов.</li>
+              <li><strong>Ручная работа:</strong> малые партии, контроль качества в каждой банке.</li>
+              <li><strong>Вкус-детонатор:</strong> яркие ягоды, идеальная текстура, баланс сладости.</li>
+              <li><strong>Доставка по РФ:</strong> СДЭК/Почта России.</li>
+            </ul>
+          </div>
+          <div class="card promo">
+            <h3>Специальное предложение</h3>
+            <p class="promo-line"><strong>-10% на первый заказ</strong> по промокоду <code>JAM10</code></p>
+            <p class="sub">Бонус: ложечка-дегустатор в подарок к каждому набору 3+ банок.</p>
+            <a href="#order" class="btn btn-primary wide glow">Забрать скидку</a>
+            <p class="fine">Ограничено по времени. Детали в подтверждении заказа.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catalog -->
+      <section id="catalog" class="catalog reveal">
+        <div class="container">
+          <h2>Каталог вкусов</h2>
+          <p class="section-sub">Выбирайте своё варенье или джем. Добавьте в заказ за секунды.</p>
+
+          <div class="catalog-grid">
+            <!-- Jam items -->
+            <article class="product" data-name="Варенье из груши" data-price="350">
+              <img src="../ATOMIC_JAM_Website_Images/homemade_jams_display.jpg" alt="Варенье из груши" />
+              <h3>Варенье из груши</h3>
+              <div class="price">350 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product" data-name="Варенье из лесной земляники" data-price="250">
+              <img src="../ATOMIC_JAM_Website_Images/raspberry_jam.jpg" alt="Варенье из лесной земляники" />
+              <h3>Варенье из лесной земляники</h3>
+              <div class="price">250 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product" data-name="Малиновое варенье" data-price="350">
+              <img src="../ATOMIC_JAM_Website_Images/raspberry_jam.jpg" alt="Малиновое варенье" />
+              <h3>Малиновое варенье</h3>
+              <div class="price">350 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product" data-name="Малиновый джем" data-price="350">
+              <img src="../ATOMIC_JAM_Website_Images/triple_berry_jam.jpg" alt="Малиновый джем" />
+              <h3>Малиновый джем</h3>
+              <div class="price">350 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product" data-name="Клубника садовая в сиропе" data-price="350">
+              <img src="../ATOMIC_JAM_Website_Images/jam_jars_assortment.jpg" alt="Клубника в сиропе" />
+              <h3>Клубника в сиропе</h3>
+              <div class="price">350 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product" data-name="Шишки в сиропе" data-price="—">
+              <img src="../ATOMIC_JAM_Website_Images/wooden_jam_spoons.jpg" alt="Шишки в сиропе" />
+              <h3>Шишки в сиропе</h3>
+              <div class="price">цена по запросу</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product" data-name="Абрикос в сиропе" data-price="—">
+              <img src="../ATOMIC_JAM_Website_Images/professional_product_display.jpg" alt="Абрикос в сиропе" />
+              <h3>Абрикос в сиропе</h3>
+              <div class="price">цена по запросу</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+
+            <!-- Cosmetics (related brand products) -->
+            <article class="product alt" data-name="Бальзам для волос" data-price="700">
+              <img src="../ATOMIC_JAM_Website_Images/natural_cosmetics_set.jpg" alt="Бальзам для волос" />
+              <h3>Бальзам для волос</h3>
+              <div class="price">700 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product alt" data-name="Пилинг для волос" data-price="350">
+              <img src="../ATOMIC_JAM_Website_Images/bath_bombs_cosmetics.jpg" alt="Пилинг для волос" />
+              <h3>Пилинг для волос</h3>
+              <div class="price">350 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product alt" data-name="Шампунь для волос" data-price="250">
+              <img src="../ATOMIC_JAM_Website_Images/natural_cosmetics_set.jpg" alt="Шампунь для волос" />
+              <h3>Шампунь для волос</h3>
+              <div class="price">250 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+            <article class="product alt" data-name="Бальзам для губ" data-price="200">
+              <img src="../ATOMIC_JAM_Website_Images/natural_cosmetics_set.jpg" alt="Бальзам для губ" />
+              <h3>Бальзам для губ</h3>
+              <div class="price">200 ₽</div>
+              <button class="btn btn-secondary add-to-order">В корзину</button>
+            </article>
+          </div>
+
+          <div class="trust-row">
+            <img src="../ATOMIC_JAM_Website_Images/jam_making_process.jpg" alt="Процесс приготовления варенья" />
+            <img src="../ATOMIC_JAM_Website_Images/jam_making_kitchen.jpg" alt="Кухня, где готовится варенье" />
+            <img src="../ATOMIC_JAM_Website_Images/fresh_berries_ingredients.jpg" alt="Свежие ягоды и ингредиенты" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about reveal">
+        <div class="container about-grid">
+          <div class="about-text">
+            <h2>О нас</h2>
+            <p><strong>ATOMIC JAM</strong> — это варенье ручной работы и натуральные угощения. Основатель и автор рецептов — Артём. Представитель и контактное лицо — Maria Lychkina. Мы растём благодаря сообществу, честности к продукту и любви к деталям.</p>
+            <ul>
+              <li>Малые партии — максимум контроля качества</li>
+              <li>Ягоды от проверенных поставщиков</li>
+              <li>Классические и авторские рецептуры</li>
+            </ul>
+          </div>
+          <div class="about-photos">
+            <img src="../ATOMIC_JAM_Website_Images/farmers_market_stall.jpg" alt="Наш стенд на ярмарке" />
+            <img src="../ATOMIC_JAM_Website_Images/professional_product_display.jpg" alt="Витрина с продукцией" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section id="reviews" class="reviews reveal">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <div class="reviews-grid">
+            <figure class="review-card">
+              <img src="../ATOMIC_JAM_Website_Images/happy_family_breakfast.jpg" alt="Семья за завтраком с вареньем" />
+              <blockquote>
+                «Вкуснейшее земляничное варенье — съели с удовольствием!»
+              </blockquote>
+              <figcaption>— Катерина Евсикова</figcaption>
+            </figure>
+            <figure class="review-card">
+              <img src="../ATOMIC_JAM_Website_Images/family_morning_breakfast.jpg" alt="Уютный завтрак с вареньем" />
+              <blockquote>
+                «Варенье супер! Попробовали черничное и абрикосовое — ждём снова!»
+              </blockquote>
+              <figcaption>— Evgenia Maslova</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events / Presence -->
+      <section id="events" class="events reveal">
+        <div class="container events-grid">
+          <div>
+            <h2>Где нас найти</h2>
+            <ul class="events-list">
+              <li>Сабантуй в «Спутнике» — ярмарочный стенд</li>
+              <li>Фестиваль «БУЛЬВАР» (Ульяновск) — участие в июне</li>
+              <li>«Канитель» (Пенза) — дегустации и продажи</li>
+            </ul>
+            <p>Следите за новостями и наличием в наших соцсетях. Принимаем предзаказы — обновления публикуем регулярно.</p>
+            <div class="socials">
+              <a class="btn btn-ghost" href="#" aria-label="Соцсеть">Написать в соцсетях</a>
+            </div>
+          </div>
+          <div class="events-photo">
+            <img src="../ATOMIC_JAM_Website_Images/farmers_market_stall.jpg" alt="Наш стенд на фестивале" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Order -->
+      <section id="order" class="order reveal">
+        <div class="container order-grid">
+          <div>
+            <h2>Сделать заказ</h2>
+            <p>Соберите корзину в каталоге и заполните форму. Мы свяжемся для подтверждения, расскажем про доставку по РФ и сроки.</p>
+            <ul class="order-perks">
+              <li>Без предоплаты для самовывоза и местной доставки</li>
+              <li>СДЭК/Почта России по стране</li>
+              <li>Гарантия замены, если что-то пойдёт не так</li>
+            </ul>
+          </div>
+          <form class="order-form" id="orderForm">
+            <div class="form-row">
+              <label>Имя
+                <input type="text" name="name" required placeholder="Ваше имя" />
+              </label>
+              <label>Телефон
+                <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>Город
+                <input type="text" name="city" required placeholder="Москва" />
+              </label>
+              <label>Способ доставки
+                <select name="delivery" required>
+                  <option value="cdek">СДЭК</option>
+                  <option value="post">Почта России</option>
+                  <option value="pickup">Самовывоз/местная доставка</option>
+                </select>
+              </label>
+            </div>
+            <label>Комментарий к заказу
+              <textarea name="comment" rows="3" placeholder="Удобное время звонка, пожелания по вкусам..."></textarea>
+            </label>
+            <div class="cart-summary" id="cartSummary">
+              <h4>Корзина</h4>
+              <ul class="cart-items" id="cartItems"></ul>
+              <div class="cart-total">Итого: <span id="cartTotal">0 ₽</span></div>
+            </div>
+            <button type="submit" class="btn btn-primary wide glow">Отправить заявку</button>
+            <p class="fine">Нажимая, вы соглашаетесь с обработкой персональных данных. Мы свяжемся в ближайшее время.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>ATOMIC JAM</strong>
+          <div>Контакт: Maria Lychkina</div>
+        </div>
+        <div class="footer-links">
+          <a href="#about">О нас</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#order">Заказать</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="texture" aria-hidden="true"></div>
+
+    <script src="./main.js"></script>
+  </body>
+  </html>
+

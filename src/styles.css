@@ -1,0 +1,145 @@
+:root{
+  --bg: #0b0a09;
+  --text: #efe7dd;
+  --muted: #cdbfac;
+  --wood: #5b3e2b;
+  --accent: #ff7043; /* красно-оранжевый ягодный */
+  --honey: #ffb300; /* золотистый мёд/сироп */
+  --green: #5fb37c; /* натуральность */
+  --card: #1a1511cc;
+  --stroke: #ffffff1a;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,sans-serif;
+  color:var(--text); background:#120f0c; position:relative;
+}
+
+.container{width:min(1100px,92vw); margin:0 auto}
+
+/* Header */
+.site-header{position:sticky; top:0; z-index:20; backdrop-filter:saturate(1.2) blur(8px); background:#0b0a09d9; border-bottom:1px solid var(--stroke)}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:12px 0}
+.brand{display:flex; align-items:center; gap:12px}
+.logo{width:42px; height:42px; object-fit:cover; border-radius:8px; box-shadow:0 0 0 2px #ffffff0f}
+.brand-text{display:flex; flex-direction:column; font-size:14px}
+.brand-text strong{letter-spacing:0.5px}
+.brand-text span{color:var(--muted); font-size:12px}
+.nav{display:flex; gap:14px; align-items:center}
+.nav a{color:var(--text); text-decoration:none; padding:8px 10px; border-radius:10px; border:1px solid transparent}
+.nav a:hover{border-color:var(--stroke); background:#ffffff08}
+
+/* Buttons */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 16px; border-radius:14px; border:1px solid var(--stroke); color:var(--text); text-decoration:none; cursor:pointer; transition:.25s ease; font-weight:600}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#ff8a50 60%, var(--honey)); color:#1b0f09; border-color:#0000}
+.btn-primary:hover{transform:translateY(-1px); filter:saturate(1.1)}
+.btn-secondary{background:#272019; color:var(--text); border-color:#3a2e24}
+.btn-secondary:hover{background:#30261e}
+.btn-ghost{background:#0000; border-color:var(--stroke)}
+.btn-ghost:hover{background:#ffffff0a}
+.btn.wide{width:100%}
+.glow{box-shadow:0 0 0 transparent}
+.glow:hover{box-shadow:0 10px 30px -6px #ff8a501f, 0 0 0 2px #ff8a5026}
+
+/* Hero */
+.hero{position:relative; isolation:isolate; min-height:72vh; display:grid; place-items:center; border-bottom:1px solid var(--stroke)}
+.hero-bg{position:absolute; inset:0; background:
+  linear-gradient(#0b0a09 0%, #0b0a09a0 20%, #0b0a0950 60%, #0b0a09 100%),
+  url('../ATOMIC_JAM_Website_Images/jam_jars_assortment.jpg') center/cover no-repeat; z-index:-1}
+.hero-inner{text-align:center; padding:80px 0 64px}
+.hero h1{font-size:48px; line-height:1.05; margin:0 0 16px; text-shadow:0 2px 20px #00000088}
+.hero p{max-width:720px; margin:0 auto 22px; color:#eee3d6}
+.hero-cta{display:flex; justify-content:center; gap:12px}
+.anime-badges{position:absolute; inset:auto 0 16%; display:flex; gap:16px; justify-content:center; font-size:22px; color:#ffd29b}
+.sparkle{animation:float 4s ease-in-out infinite; opacity:.8}
+.sparkle:nth-child(2){animation-duration:5.5s}
+.sparkle:nth-child(3){animation-duration:6.5s}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+
+/* Offer */
+.offer{padding:48px 0 24px; background:radial-gradient(1200px 400px at 10% -20%, #ff8a5012, transparent), radial-gradient(1000px 500px at 90% -10%, #ffd54f12, transparent)}
+.offer-grid{display:grid; grid-template-columns:1.3fr .9fr; gap:16px}
+.card{background:var(--card); border:1px solid var(--stroke); border-radius:16px; padding:18px}
+.benefits{margin:10px 0 0; padding-left:18px}
+.benefits li{margin:8px 0}
+.promo .promo-line{font-size:18px; margin:4px 0 8px}
+.promo .sub{color:var(--muted); margin:0 0 10px}
+.fine{opacity:.7; font-size:12px}
+
+/* Catalog */
+.catalog{padding:48px 0}
+.section-sub{color:var(--muted); margin-top:-6px}
+.catalog-grid{margin-top:18px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+.product{background:#17120e; border:1px solid #2a221b; border-radius:16px; padding:10px; display:flex; flex-direction:column; gap:8px; position:relative; overflow:hidden}
+.product.alt{border-color:#253125; background:#121711}
+.product img{width:100%; height:170px; object-fit:cover; border-radius:12px}
+.product h3{font-size:16px; margin:0}
+.product .price{color:#ffd59e}
+.product .btn{margin-top:auto}
+
+.trust-row{margin-top:20px; display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.trust-row img{width:100%; height:140px; object-fit:cover; border-radius:12px; border:1px solid var(--stroke)}
+
+/* About */
+.about{padding:48px 0; background:radial-gradient(900px 300px at 0% 0%, #5fb37c14, transparent)}
+.about-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:18px; align-items:center}
+.about-photos{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.about-photos img{width:100%; height:170px; object-fit:cover; border-radius:12px; border:1px solid var(--stroke)}
+
+/* Reviews */
+.reviews{padding:48px 0}
+.reviews-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.review-card{background:var(--card); border:1px solid var(--stroke); border-radius:16px; padding:14px}
+.review-card img{width:100%; height:150px; object-fit:cover; border-radius:10px; margin-bottom:8px}
+.review-card blockquote{margin:0 0 6px; font-size:15px}
+.review-card figcaption{color:var(--muted); font-size:13px}
+
+/* Events */
+.events{padding:48px 0}
+.events-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:center}
+.events-list{padding-left:18px}
+.events-photo img{width:100%; height:220px; object-fit:cover; border-radius:14px; border:1px solid var(--stroke)}
+
+/* Order */
+.order{padding:48px 0; background:radial-gradient(900px 300px at 100% 0%, #ffb30014, transparent)}
+.order-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:start}
+.order-perks{padding-left:18px}
+.order-form{background:var(--card); border:1px solid var(--stroke); border-radius:16px; padding:14px}
+.form-row{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+label{display:flex; flex-direction:column; gap:6px; font-weight:600}
+input,select,textarea{background:#120e0b; color:var(--text); border:1px solid #2a221b; border-radius:12px; padding:10px}
+input:focus,select:focus,textarea:focus{outline:none; border-color:#ff8a50}
+.cart-summary{margin:10px 0 8px; padding:10px; border:1px dashed var(--stroke); border-radius:12px}
+.cart-items{list-style:none; padding:0; margin:4px 0}
+.cart-items li{display:flex; justify-content:space-between; gap:12px; padding:6px 0; border-bottom:1px dashed #ffffff12}
+.cart-total{font-weight:700; margin-top:8px}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--stroke); background:#0a0908; padding:18px 0}
+.footer-inner{display:flex; justify-content:space-between; align-items:center}
+.footer-links{display:flex; gap:14px}
+.footer-links a{color:var(--muted); text-decoration:none}
+.footer-links a:hover{color:var(--text)}
+
+/* Subtle wooden texture overlay */
+.texture{position:fixed; inset:0; background:url('../ATOMIC_JAM_Website_Images/wood_texture_background.jpg') center/cover no-repeat fixed; mix-blend-mode:soft-light; opacity:.12; pointer-events:none; z-index:-1}
+
+/* Reveal on scroll */
+.reveal{opacity:0; transform:translateY(16px); transition:.6s cubic-bezier(.2,.65,.2,1)}
+.reveal.visible{opacity:1; transform:none}
+
+/* Responsive */
+@media (max-width: 1020px){
+  .catalog-grid{grid-template-columns:repeat(3,1fr)}
+  .events-grid,.about-grid,.offer-grid,.order-grid{grid-template-columns:1fr}
+}
+@media (max-width: 720px){
+  .hero h1{font-size:36px}
+  .catalog-grid{grid-template-columns:repeat(2,1fr)}
+  .reviews-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .hero-cta{flex-direction:column}
+}
+

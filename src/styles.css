@@ -47,8 +47,8 @@ body{
 .hero{position:relative; isolation:isolate; min-height:72vh; display:grid; place-items:center; border-bottom:1px solid var(--stroke)}
 .hero-bg{position:absolute; inset:0; background:
   linear-gradient(#0b0a09 0%, #0b0a09a0 20%, #0b0a0950 60%, #0b0a09 100%),
-  url('./assets/ATOMIC_JAM_Website_Images/jam_jars_assortment.jpg') center/cover no-repeat; z-index:-1}
-.hero-inner{text-align:center; padding:80px 0 64px}
+  url('./assets/ATOMIC_JAM_Website_Images/jam_jars_assortment.jpg') center/cover no-repeat; z-index:0; pointer-events:none}
+.hero-inner{text-align:center; padding:80px 0 64px; position:relative; z-index:1}
 .hero h1{font-size:48px; line-height:1.05; margin:0 0 16px; text-shadow:0 2px 20px #00000088}
 .hero p{max-width:720px; margin:0 auto 22px; color:#eee3d6}
 .hero-cta{display:flex; justify-content:center; gap:12px}
@@ -142,4 +142,3 @@ input:focus,select:focus,textarea:focus{outline:none; border-color:#ff8a50}
   .form-row{grid-template-columns:1fr}
   .hero-cta{flex-direction:column}
 }
-
